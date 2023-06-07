@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剧情介绍</title>
+    <style>
+    *{margin: 0; padding: 0;}
+        .top-left
+        {
+            width: 30%;
+            height: 120px;
+            /* background-color: aqua; */
+            float: left;
+            padding-bottom:30px ;
+        }
+        .top-right
+        {
+            width: 70%;
+            height: 120px;
+            /* background-color: red; */
+            float: left;
+            z-index: 1;
+            position: relative;
+        }
+        .index
+        {
+            font-size: 23px;
+            
+            list-style: none;
+            text-align: center;
+           
+        }
+        .index>li
+        {
+            float: left;
+             margin-top: 66px; 
+            margin-left: 45px;
+             background-image: url(../image/中间图片.png);
+             width: 12%;
+             height: 35px;
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 10px;
+        }
+       
+        .index a
+        {
+            text-decoration: none;
+            color: rgb(236, 42, 152);
+            /* margin:30px; */
+           
+        }
+
+        .sub-index>li
+        {
+           
+            list-style: none;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            margin-top: 8px;
+           
+        }
+
+        /*设置下拉菜单*/
+        .sub-index
+        {
+            visibility: hidden;
+        }
+       .sub-list:hover ul
+       {
+           visibility: visible;
+           display: block;
+       }
+        /*⬆设置下拉菜单*/
+        div
+        {
+            width: 100%;
+            height: 300px;
+            border-bottom: solid rgb(216, 58, 150) 5px;
+            
+        }
+        .c1
+        {
+            border-top: solid rgb(216, 58, 150) 5px;
+        }
+        
+        .title
+        {
+            text-align: center;
+            font-size: 24px;
+            margin:30px ;
+            color: rgb(222, 64, 164);
+        }
+        .content
+        {
+         
+        }
+        .pic
+        {
+            border-radius: 50%;
+            
+        }
+        .back3
+        {
+            float: right;
+            margin-top: 130px;
+            margin-right: 20px;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            width: 120px;
+            height: 30px;
+        }
+        .back3 a
+        {
+            text-decoration: none;
+            color:rgb(236, 42, 152) ;
+            font-size: 20px;
+            margin-left:20px ;
+            
+        }
+        .back1
+        {
+            float: right;
+            margin-top: 50px;
+            margin-right: 20px;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            width: 120px;
+            height: 30px;
+        }
+        .back1 a
+        {
+            text-decoration: none;
+            color:rgb(236, 42, 152) ;
+            font-size: 20px;
+            margin-left:20px ;
+            
+        }
+        .back2
+        {
+            float: right;
+            margin-top: 90px;
+            margin-right: 20px;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            width: 120px;
+            height: 30px;
+        }
+        .back2 a
+        {
+            text-decoration: none;
+            color:rgb(236, 42, 152) ;
+            font-size: 20px;
+            margin-left:20px ;
+            
+        }
+        .back4
+        {
+            float: right;
+            margin-top: 130px;
+            margin-right: 20px;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            width: 120px;
+            height: 30px;
+        }
+        .back4 a
+        {
+            text-decoration: none;
+            color:rgb(236, 42, 152) ;
+            font-size: 20px;
+            margin-left:20px ;
+            
+        }
+        .back5
+        {
+            float: right;
+            margin-top: 130px;
+            margin-right: 20px;
+            background-image: url(../image/中间图片.png);
+            
+             /* background-position: center; */
+            background-size: cover;
+            border-radius: 20px;
+            width: 120px;
+            height: 30px;
+        }
+        .back5 a
+        {
+            text-decoration: none;
+            color:rgb(236, 42, 152) ;
+            font-size: 20px;
+            margin-left:20px ;
+            
+        }
+        .copyright
+        {
+            width: 100%;
+            height: 50px;
+            /* background-color: brown; */
+            text-align: center;
+            color: rgb(241, 19, 96);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left" style="border: none;"><img src="../image/newlogo.png" alt="" width="100%" height="150px"></div>
+    <div class="top-right" style="border: none;">
+        
+        <ul class="index">
+            <li style="margin-left: 20px;"  class="sub-list"><a  class="a-modify" href="characters-2.html" target="" >人&nbsp;物&nbsp;简&nbsp;介</a> 
+                <ul class="sub-index">
+                    <li style="margin-top: 5px;"><a href="../html/characters-2.html">主&nbsp;角&nbsp;团</a></li>
+                    <li ><a href="../html/characters-3.html">同&nbsp;文&nbsp;馆</a></li>
+                    <li><a href="../html/characters-4.html">幻&nbsp;音&nbsp;坊</a></li>
+                    
+                  
+                </ul>
+            </li>
+            <li class="sub-list"><a class="a-modify" href="plot.html" target="_blank" > 新&nbsp;片&nbsp;预&nbsp;导</a>
+            
+              <ul class="sub-index">
+                  <li style="margin-top: 5px;"><a href="../html/mv1.html">第&nbsp;一&nbsp;季</a></li>
+                  <li ><a href="../html/mv2.html">第&nbsp;二&nbsp;季</a></li>
+                  <li><a href="../html/mv3.html">第&nbsp;三&nbsp;季</a></li>
+                  <li><a href="../html/mv4.html">第&nbsp;四&nbsp;季</a></li>
+                  <li><a href="../html/plot.html">第&nbsp;五&nbsp;季</a></li>
+              </ul>
+            
+            
+            </li>
+            <li class="sub-list"><a class="a-modify" href="wonderful episode.html" target="_blank"> 剧&nbsp;情&nbsp;介&nbsp;绍</a>
+                <ul class="sub-index">
+                    <li style="margin-top: 5px;"><a href="../html/wonderful episode.html#c1">第&nbsp;一&nbsp;季</a></li>
+                    <li ><a href="../html/wonderful episode.html#c2">第&nbsp;二&nbsp;季</a></li>
+                    <li><a href="../html/wonderful episode.html#c3">第&nbsp;三&nbsp;季</a></li>
+                    <li><a href="../html/wonderful episode.html#c4">第&nbsp;四&nbsp;季</a></li>
+                    <li><a href="../html/wonderful episode.html#c5">第&nbsp;五&nbsp;季</a></li>
+                </ul>
+              
+            </li>
+            <li class="sub-list"><a class="a-modify" href="#" target="_blank">加&nbsp;入&nbsp;我&nbsp;们</a>
+            
+                <ul class="sub-index">
+                     <li style="margin-top: 5px;"><a href="log in.html">&nbsp;&nbsp;登&nbsp;&nbsp;&emsp; 录</a></li>
+                    <li ><a href="register.html">&nbsp;&nbsp;注&nbsp;&nbsp;&emsp; 册</a></li>
+                 
+                </ul>
+            </li>
+            <li class="sub-list"><a class="a-modify" href="table-suggestion.html" target=""> 网&nbsp;站&nbsp;建&nbsp;设</a>
+                <ul class="sub-index">
+                    <li style="margin-top: 5px;"><a href="table-suggestion.html">意&nbsp;见&nbsp;反&nbsp;馈</a></li>
+                   <li ><a href="contact.html">联&nbsp;系&nbsp;站&nbsp;长</a></li>
+                
+               </ul>
+            </li>
+            <li><a class="a-modify" href="index.html" target=""> 首&nbsp;&nbsp;&nbsp;页</a></li>
+        </ul>
+
+
+    </div>
+
+    <div style="clear: both;height: 0;width: 0;"></div>
+    <div class="c1">
+        <div style="width: 20%; height: 300px; float: left;"><a name="c1"  href="https://v.qq.com/x/cover/o85sk7hqhbw3g9n/c0017unh1n9.html"><img src="../image/episode/1.webp" alt="" width="100%" height="300px" class="pic"></a>  </div>
+      <div style="float: left;width: 80%; height: 300px;" class="left"> 
+        <p class="title">画江湖之不良人第一季</p>
+        <p class="content">&emsp; &emsp;唐朝末年，天下大乱，藩镇割据，群雄并起。据说黄巢叛军攻陷长安之前，官府中的神秘组织不良人，曾经执行过最后一次任务，然后便消失不见了，几乎与他们同
+            <br> 
+时消失的，还有叛军搜遍长安也未曾找到的国库宝藏，自此以后，江湖上便传出一条谣言，在传说中的龙泉剑上，隐藏着一个天大的秘密。
+直到有一天，一个名叫李星云<br>
+的神秘孤儿，机缘巧合下被隐士阳叔子所救，并拜在其门下学武，数年之后，李星云与师妹陆林轩下山历练，途中结识了姬如雪和张子凡两个好友，后来又偶然得到了传说中的龙泉剑。
+这样一来，李星云和龙泉剑引起了包括玄冥教、通文馆、幻音坊和天师府等诸多门派的觊觎，他们动着各种各样的心思，或巧取豪夺，或通缉追杀，各种手段招数无所不用其极，甚至连消失已久的不良人也有重出江湖的迹象。
+李星云这个身世成谜的少年，就这样和他的朋友们周旋于险恶的江湖之中，为了求得一条生存之道而努力挣扎着。</p>
+         <!-- <p class="back1"><a href="index.html">返回首页</a></p> -->
+</div>
+
+    
+    </div>
+    <div class="c2">
+        <div style="width: 20%; height: 300px; float: left;"> <a name="c2"  href="https://v.qq.com/x/cover/vm3usmzs1wa5yo3.html"><img src="../image/episode/2.webp" alt="" width="100%" height="300px" class="pic"></a></div>
+        <div style="float: left;width: 80%; height: 300px;"> 
+            <p class="title">画江湖之不良人第二季</p>
+            <p class="content">&emsp; &emsp;姬如雪为救李星云坠崖生死未卜，李星云苦苦找寻姬如雪，同时继续追查龙泉宝藏的下落。江湖各派为夺宝藏心怀鬼胎、各自派人跟踪暗算李星云、张子凡、陆林轩等人。陆林轩意外中毒导致失忆，张子凡心痛不已，决定于陆林轩成亲。成亲当日，张子凡再遭暗算，陆林轩再次中毒被送往幻音坊疗伤。陆林轩被女帝用功修改记忆，成为一名杀手，刺杀张子凡过程中被九叔十叔打伤，再次陷入昏迷。此刻，姬如雪得知神秘身世，李星云离龙泉宝藏越来越近，就在群雄集结龙泉宝藏之时，又一个惊天秘密震慑众人</p>
+            <!-- <p class="back2"><a href="index.html">返回首页</a></p> -->
+        </div>
+    <div class="c3">
+        <div style="width: 20%; height: 300px; float: left;"><a  name="c3" href="https://v.qq.com/x/cover/enj7gj9pcksq89p.html"><img src="../image/episode/3.webp" alt="" width="100%" height="300px" class="pic"></a></div>
+        <div style="float: left;width: 80%; height: 300px;"> 
+            <p class="title">画江湖之不良人第三季</p>
+            <p class="content">&emsp; &emsp;乾陵被毁、龙泉宝藏下落不明，前朝皇子李星云欲归隐山林，不良帅决心挟天子以令诸侯，号召江湖各大势力复辟大唐，王道与霸道将在这片权力漩涡中进行终极对垒！贵妃墓、长安城诉说着昔日盛唐的锦绣江山；苗疆巫蛊、湘西赶尸揭开了江湖中不为人知的明争暗斗。</p>
+             <!-- <p class="back3"><a href="index.html">返回首页</a></p> -->
+        </div>
+    <div class="c4">
+        <div style="width: 20%; height: 300px; float: left;"><a  name="c4" href="https://v.qq.com/x/cover/mzc00200eacw05k/c00395fhj3s.html"><img src="../image/episode/4.webp" alt="" width="100%" height="300px" class="pic"></a></div>
+        <div style="float: left;width: 80%; height: 300px;"> 
+            <p class="title">画江湖之不良人第四季</p>
+            <p class="content">&emsp; &emsp;十万大山危机四伏，娆疆之行艰难险阻。神秘的十二峒有着怎样不为人知的秘密？面对强大的各方势力，李星云等人能否全身而退？此段神秘莫测的娆疆之旅，即将启程...
+                <!-- <p class="back4"><a href="index.html">返回首页</a></p> -->
+            </div>
+    <div class="c5">
+        <div style="width: 20%; height: 300px; float: left;"> <a name="c5"  href="https://v.qq.com/x/cover/mzc00200gw2ez0b.html"><img src="../image/episode/5.jpg" alt="" width="100%" height="300px" class="pic"></a></div>
+        <div style="float: left;width: 80%; height: 300px;"> 
+            <p class="title">画江湖之不良人第五季</p>
+            <p class="content">&emsp; &emsp;饶疆一行归来，中原已物是人非，李嗣源称监国，并借天子之名四处绞杀不良人，而身为天子的李星云虽已及霸道与天道为一身，但在成长蜕变后的李星云也即将面临一个新的抉择……
+                <!-- <p class="back5"><a href="index.html">返回首页</a></p> -->
+            </div>
+ 
+            <div style="clear: both;height: 0;width: 0;"></div>
+            <div class="copyright" ><br>&copy; 赣南师范大学|数学与计算机科学学院|计算机科学与技术2102|邱志斌</div>
+</body>
+</html>
